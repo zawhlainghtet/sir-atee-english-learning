@@ -9,7 +9,7 @@
     * { box-sizing:border-box; }
     body { margin:0; background:var(--bg); color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.75; }
     main { width:min(850px,92vw); margin:32px auto; }
-    header, article { background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:clamp(22px,5vw,50px); margin-bottom:24px; box-shadow:0 8px 24px #473e3012; }
+    header { background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:clamp(22px,5vw,50px); margin-bottom:24px; box-shadow:0 8px 24px #473e3012; }
     h1,h2,h3 { line-height:1.25; }
     h1 { margin:0 0 8px; color:var(--accent); font-size:clamp(2rem,6vw,3.3rem); }
     h2 { color:var(--accent); font-size:clamp(1.55rem,4vw,2.15rem); margin-top:0; }
@@ -20,60 +20,72 @@
     .label { display:inline-block; padding:4px 10px; border-radius:999px; font:700 .82rem Arial,sans-serif; letter-spacing:.04em; text-transform:uppercase; }
     .original { background:var(--original); }
     .corrected { background:var(--corrected); }
-    nav a { color:var(--accent); margin-right:16px; }
+    .date-heading { margin:30px 4px 14px; color:var(--muted); font:700 .95rem Arial,sans-serif; letter-spacing:.08em; text-transform:uppercase; }
+    details { background:var(--paper); border:1px solid var(--line); border-radius:16px; margin-bottom:14px; box-shadow:0 8px 24px #473e3012; overflow:hidden; }
+    summary { position:relative; cursor:pointer; list-style:none; padding:22px 58px 22px 24px; }
+    summary::-webkit-details-marker { display:none; }
+    summary::after { content:"＋"; position:absolute; right:24px; top:50%; transform:translateY(-50%); color:var(--accent); font:400 1.7rem Arial,sans-serif; }
+    details[open] summary::after { content:"−"; }
+    summary h2 { margin:8px 0 0; font-size:clamp(1.25rem,4vw,1.7rem); }
+    .essay-body { border-top:1px solid var(--line); padding:8px clamp(22px,5vw,50px) clamp(24px,5vw,46px); }
     footer { text-align:center; color:var(--muted); padding:8px 0 36px; }
-    @media print { body{background:white} main{width:100%;margin:0} header,article{box-shadow:none;break-inside:avoid} }
+    @media print { body{background:white} main{width:100%;margin:0} header,details{box-shadow:none;break-inside:avoid} }
   </style>
 </head>
 <body>
 <main>
   <header>
     <h1>English Reading & Writing</h1>
-    <p class="subtitle">Sir Atee’s practice collection · 21 October 2026</p>
-    <nav><a href="#reading1">Reading 1</a><a href="#reading2">Reading 2</a><a href="#original">Original</a><a href="#corrected">Corrected</a></nav>
-    <p class="note">Read the two model essays first. Then compare your original writing with the corrected version.</p>
+    <p class="subtitle">Sir Atee’s daily practice collection</p>
+    <p class="note">Choose a date and tap a title to read. Tap it again to close.</p>
   </header>
 
-  <article id="reading1">
-    <span class="label corrected">Reading 1 · Discussion + Opinion</span>
-    <h2>Practical Skills and Academic Knowledge</h2>
+  <h2 class="date-heading">21 October 2026</h2>
+
+  <details id="reading1">
+    <summary><span class="label corrected">Reading 1 · Discussion + Opinion</span><h2>Practical Skills and Academic Knowledge</h2></summary>
+    <div class="essay-body">
     <p class="topic">Some people believe universities should teach only practical job skills, while others think broader academic knowledge is equally important. Discuss both views and give your opinion.</p>
     <p>As graduate employment becomes increasingly competitive, there is continuing debate about what universities should teach. Some people argue that courses should concentrate on practical workplace skills, whereas others believe that a broad academic education remains essential. In my view, universities should combine both approaches because students need immediate employability as well as long-term intellectual flexibility.</p>
     <p>Those who favour practical education point out that many graduates struggle to meet employers’ expectations. For example, a software engineering student may understand programming theory but still lack experience in teamwork, project management, or communicating with clients. If universities include internships, simulations, and industry-based projects, students can apply their knowledge before entering full-time employment. Consequently, employers spend less time providing basic training, while graduates become more confident and productive.</p>
     <p>However, concentrating exclusively on current job skills may create a workforce that cannot adapt to future change. Technologies and working practices develop rapidly, so a skill that is valuable today may become outdated within a few years. Subjects such as mathematics, philosophy, and research methodology teach students how to analyse evidence, question assumptions, and solve unfamiliar problems. These abilities remain useful even when particular tools or occupations disappear.</p>
     <p>Therefore, the most effective university programmes should integrate academic foundations with practical experience. Engineering students, for instance, could study scientific principles while also completing collaborative design projects with companies. This balanced model would prepare them not merely for their first job, but for an entire career involving continuous learning.</p>
     <p>In conclusion, practical training can ease the transition from education to employment, while broad academic study develops lasting intellectual abilities. Universities should not choose one at the expense of the other; instead, they should design courses in which theory and practice reinforce each other.</p>
-  </article>
+    </div>
+  </details>
 
-  <article id="reading2">
-    <span class="label corrected">Reading 2 · Problem and Solution</span>
-    <h2>Food Waste in Cities</h2>
+  <details id="reading2">
+    <summary><span class="label corrected">Reading 2 · Problem and Solution</span><h2>Food Waste in Cities</h2></summary>
+    <div class="essay-body">
     <p class="topic">Many cities experience serious food waste from households, restaurants, and supermarkets. What causes this problem, and what measures could reduce it?</p>
     <p>Although food production requires substantial land, water, energy, and labour, large quantities of edible food are discarded in modern cities. This problem is mainly caused by consumer habits and commercial practices, but it can be reduced through education, regulation, and better redistribution systems.</p>
     <p>One major cause is that consumers often purchase more food than they can use. Promotional offers encourage shoppers to buy large quantities, while poor meal planning results in forgotten products expiring at home. Furthermore, many people misunderstand date labels and throw away food after its “best before” date even when it remains safe to eat. Restaurants and supermarkets also contribute because customers expect generous portions and shelves that appear fully stocked throughout the day. As a result, businesses may prepare or display more food than they can sell.</p>
     <p>Several coordinated measures could address these causes. First, public campaigns should teach households to plan meals, store food correctly, and distinguish between quality labels and genuine safety warnings. This would reduce unnecessary disposal at the consumer level. Second, governments could require large food businesses to measure and report their waste. Once companies have clear data, they can identify inefficient purchasing, storage, and portioning practices. Finally, cities should support partnerships through which supermarkets and restaurants donate safe, unsold products to charities. Tax incentives and simple food-safety guidelines could make such cooperation easier.</p>
     <p>In conclusion, urban food waste arises from excessive purchasing, confusion about labels, and business pressure to maintain abundance. A combination of consumer education, mandatory reporting, and organised donation would reduce waste more effectively than any single measure.</p>
-  </article>
+    </div>
+  </details>
 
-  <article id="original">
-    <span class="label original">Sir Atee’s Original Draft</span>
-    <h2>AI Developer Responsibility</h2>
+  <details id="original">
+    <summary><span class="label original">Sir Atee’s Original Draft</span><h2>AI Developer Responsibility</h2></summary>
+    <div class="essay-body">
     <p class="topic">AI developers should be legally responsible when their systems cause harm. To what extent do you agree or disagree?</p>
     <p>Nowadays, Ai is popular and friendly and closely with people in our daily life for different purpose. Some are using ai for academic learning, some are as assistants and some are taking advice from ai. Eventually, Ai is more enhance, life is more comfortable, but then our security, privacy and data can be leaked.</p>
     <p>AI is useful and easy in research and development, which can be further and fast. To get a better AI, AI developer company requires more and more data for specially one kind of AI. In here, they have to collect the data from public data source and creating the data or buying data. From these all data, we can not even get a good AI model. So, developers release their AI model for user freely, in where they will get real world data to finetune their model. They will be taking our data such as taking and testing CCTV data for fire ai, chat data from chat ai eg, which age like which brands.</p>
     <p>However, collecting data is required for a good ai model, they should not collect and use important and privacy data such as password, banking, and some confidential data. They should add rule and regulation for data security and should be legally responsible. The government also should check the ai company with rule and regulation, and provide the teaching why useful and harmful the privacy data and how to protect our data.</p>
     <p>In conclusion, AI is more usage in life, AI companies require more data. However, Ai developers should be ethic and to be more secure even when system cause harm. That is the only way to use ai peacefully by users.</p>
-  </article>
+    </div>
+  </details>
 
-  <article id="corrected">
-    <span class="label corrected">Corrected Version · 266 Words</span>
-    <h2>AI Developer Responsibility</h2>
+  <details id="corrected">
+    <summary><span class="label corrected">Corrected Version · 266 Words</span><h2>AI Developer Responsibility</h2></summary>
+    <div class="essay-body">
     <p class="topic">AI developers should be legally responsible when their systems cause harm. To what extent do you agree or disagree?</p>
     <p>Nowadays, artificial intelligence has become closely integrated into people’s daily lives. Some individuals use it for academic study, while others rely on it as a personal assistant or seek advice from it. Although increasingly advanced AI can make life more convenient, it may also cause serious harm through privacy breaches, inaccurate decisions, or the misuse of personal data. I therefore largely agree that AI developers should be legally responsible when such harm results from their negligence.</p>
     <p>AI is particularly useful in research and development because it can process information rapidly. However, companies require enormous amounts of data to develop specialised AI systems. They may collect information from public sources, purchase datasets, or obtain real-world data from users after releasing a model. For example, a fire-detection system may be trained using CCTV footage, while a chatbot may collect information about users’ ages, interests, and purchasing preferences. If developers gather such information without clear consent or fail to protect it adequately, individuals may suffer financial loss, discrimination, or invasion of privacy. In these circumstances, legal liability would encourage companies to introduce stronger safeguards.</p>
     <p>However, developers should not automatically be blamed for every harmful outcome. AI systems may be misused by users or affected by circumstances that developers could not reasonably predict. Therefore, liability should apply when a company has collected confidential information illegally, ignored known risks, or failed to follow accepted safety standards. Governments should establish clear regulations, conduct independent audits, and educate the public about protecting personal data.</p>
     <p>In conclusion, AI developers should be held legally responsible when preventable harm is caused by negligence or weak security. This balanced approach would protect users without unfairly punishing responsible innovation.</p>
-  </article>
+    </div>
+  </details>
   <footer>Prepared for Sir Atee · Open this file in any browser · Works offline</footer>
 </main>
 </body>
