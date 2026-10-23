@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A 20-minute Academic Writing lesson for Sir Atee with two model essays and structural analysis.">
+  <title>Academic Writing — Paragraph Logic and Connections</title>
+  <style>
+    :root {
+      --bg:#eef2ec;
+      --paper:#fffdf8;
+      --ink:#20251f;
+      --muted:#697067;
+      --accent:#285b45;
+      --accent-soft:#e3f0e8;
+      --gold:#ad7621;
+      --gold-soft:#fff4d9;
+      --line:#d8dfd6;
+      --shadow:0 18px 45px rgba(38,55,44,.10);
+    }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.72 Georgia,"Times New Roman",serif; }
+    a { color:inherit; }
+    .progress { position:fixed; inset:0 auto auto 0; width:0; height:4px; background:var(--gold); z-index:20; }
+    .topbar { position:sticky; top:0; z-index:10; border-bottom:1px solid rgba(40,91,69,.16); background:rgba(255,253,248,.94); backdrop-filter:blur(12px); }
+    .topbar-inner { width:min(900px,92vw); margin:auto; padding:12px 0; display:flex; justify-content:space-between; gap:18px; align-items:center; font:700 .78rem/1.2 system-ui,sans-serif; letter-spacing:.06em; text-transform:uppercase; }
+    .back { color:var(--accent); text-decoration:none; }
+    .date { color:var(--muted); }
+    main { width:min(900px,92vw); margin:30px auto 70px; }
+    .hero,.card { background:var(--paper); border:1px solid var(--line); box-shadow:var(--shadow); }
+    .hero { border-radius:24px; padding:clamp(26px,6vw,58px); overflow:hidden; position:relative; }
+    .hero::after { content:""; position:absolute; width:240px; height:240px; border-radius:50%; right:-100px; top:-110px; background:var(--accent-soft); }
+    .eyebrow,.pill { display:inline-block; border-radius:999px; font:800 .75rem/1 system-ui,sans-serif; letter-spacing:.07em; text-transform:uppercase; }
+    .eyebrow { padding:8px 11px; color:var(--accent); background:var(--accent-soft); }
+    h1,h2,h3,h4 { font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.18; letter-spacing:-.025em; }
+    h1 { position:relative; z-index:1; max-width:720px; margin:18px 0 14px; font-size:clamp(2.25rem,7vw,4.8rem); }
+    .lead { position:relative; z-index:1; max-width:680px; margin:0; color:var(--muted); font:1.08rem/1.6 system-ui,sans-serif; }
+    .timing { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:28px; }
+    .time-box { padding:16px 18px; border-radius:15px; background:#f4f7f3; font-family:system-ui,sans-serif; }
+    .time-box strong { display:block; color:var(--accent); }
+    .time-box span { color:var(--muted); font-size:.9rem; }
+    nav { margin:20px 0; display:flex; flex-wrap:wrap; gap:9px; }
+    nav a { padding:9px 13px; border:1px solid var(--line); border-radius:999px; background:var(--paper); color:var(--accent); font:700 .82rem/1 system-ui,sans-serif; text-decoration:none; }
+    .section-heading { margin:44px 4px 16px; color:var(--accent); font-size:clamp(1.65rem,5vw,2.35rem); }
+    .card { border-radius:20px; padding:clamp(22px,5vw,44px); margin-bottom:20px; }
+    .pill { padding:7px 10px; color:#73500f; background:var(--gold-soft); }
+    .card h3 { margin:16px 0 8px; font-size:clamp(1.45rem,4.5vw,2.15rem); }
+    .topic { margin:18px 0 25px; padding:15px 18px; border-left:5px solid var(--gold); background:var(--gold-soft); font-style:italic; }
+    .essay p { margin:0 0 1.25em; }
+    .analysis { border-left:5px solid var(--accent); }
+    .analysis h3 { color:var(--accent); }
+    .analysis h4 { margin:29px 0 8px; font-size:1.08rem; }
+    ul,ol { padding-left:1.35em; }
+    li { margin:.52em 0; }
+    code { padding:.12em .34em; border-radius:5px; background:#edf2ed; font:600 .86em/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; }
+    .chain { margin:14px 0; padding:13px 16px; border-radius:12px; background:#f2f6f3; color:var(--accent); font:700 .92rem/1.6 system-ui,sans-serif; }
+    .technique { margin-top:22px; border:2px solid var(--accent); background:var(--accent-soft); }
+    .technique h2 { margin-top:0; color:var(--accent); }
+    footer { padding-top:15px; text-align:center; color:var(--muted); font:.86rem/1.5 system-ui,sans-serif; }
+    @media (max-width:620px) {
+      body { font-size:17px; line-height:1.68; }
+      .timing { grid-template-columns:1fr; }
+      .topbar-inner { align-items:flex-start; }
+      .date { text-align:right; }
+      .hero,.card { border-radius:17px; }
+    }
+    @media print {
+      body { background:white; }
+      .topbar,.progress,nav { display:none; }
+      main { width:100%; margin:0; }
+      .hero,.card { box-shadow:none; break-inside:avoid; }
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a class="back" href="index.html">← English Collection</a>
+      <span class="date">23 October 2026</span>
+    </div>
+  </div>
+
+  <main>
+    <header class="hero">
+      <span class="eyebrow">Writing Lesson</span>
+      <h1>Clear Progression, Paragraph Logic &amp; Sentence Connections</h1>
+      <p class="lead">Read two model essays naturally, then study how every paragraph and sentence connects to the next idea.</p>
+      <div class="timing">
+        <div class="time-box"><strong>First 10 minutes</strong><span>Normal reading — do not stop for vocabulary.</span></div>
+        <div class="time-box"><strong>Next 10 minutes</strong><span>Structural analysis, grammar, and linking.</span></div>
+      </div>
+    </header>
+
+    <nav aria-label="Lesson sections">
+      <a href="#essay-one">Essay 1</a>
+      <a href="#essay-two">Essay 2</a>
+      <a href="#analysis-one">Essay 1 Analysis</a>
+      <a href="#analysis-two">Essay 2 Analysis</a>
+      <a href="#technique">Key Technique</a>
+    </nav>
+
+    <h2 class="section-heading">First 10 Minutes — Normal Reading</h2>
+
+    <article class="card essay" id="essay-one">
+      <span class="pill">Model Essay 1 · Discussion and Opinion</span>
+      <h3>Artificial Lighting in Cities</h3>
+      <p class="topic">Some people believe cities should reduce artificial lighting at night, while others argue that bright streets and buildings are necessary. Discuss both views and give your opinion.</p>
+      <p>Artificial lighting has transformed modern cities by allowing people to work, travel and socialise after sunset. However, concerns about energy consumption and light pollution have led some people to demand darker urban environments. Although adequate lighting is essential for safety, I believe cities should reduce unnecessary illumination while protecting important public areas.</p>
+      <p>Those who support bright urban lighting mainly emphasise security and economic activity. Well-lit streets can help pedestrians identify obstacles and feel safer when travelling at night. Lighting is particularly important around transport stations, hospitals and busy intersections, where poor visibility may increase the risk of accidents or crime. Furthermore, restaurants, shops and entertainment venues benefit from evening customers. If commercial districts became too dark, fewer people might visit them, which could reduce local income and employment.</p>
+      <p>Nevertheless, excessive lighting creates environmental and social costs. Illuminated advertisements, empty office buildings and decorative lights often remain active throughout the night, even when nobody needs them. This wastes electricity and indirectly increases carbon emissions where power is generated from fossil fuels. In addition, artificial brightness can disturb wildlife and prevent city residents from experiencing a natural night sky. Constant exposure to light may also interfere with sleep, especially when powerful signs or streetlamps shine directly into homes.</p>
+      <p>In my view, the most effective policy is not to make cities completely dark but to use lighting more intelligently. Local authorities could install motion-sensitive lamps, direct light towards the ground and reduce brightness during quiet hours. Essential locations would remain visible, whereas unnecessary lighting would be limited.</p>
+      <p>In conclusion, bright lighting supports safety and the night-time economy, but uncontrolled illumination wastes energy and damages the environment. Therefore, cities should adopt targeted lighting systems that provide visibility only where and when it is genuinely required.</p>
+    </article>
+
+    <article class="card essay" id="essay-two">
+      <span class="pill">Model Essay 2 · Problem and Solution</span>
+      <h3>Declining Household Repair Skills</h3>
+      <p class="topic">Many young adults are unable to repair basic household items and instead replace them. What problems does this cause, and what solutions can be introduced?</p>
+      <p>In many societies, replacing a damaged product has become more common than repairing it. This behaviour is partly caused by limited practical knowledge and the low price of mass-produced goods. However, it increases both household expenditure and environmental damage. Schools, manufacturers and local communities can all help young people develop a more practical attitude towards broken possessions.</p>
+      <p>The first major problem is unnecessary waste. Small appliances, furniture and electronic devices are frequently discarded because of minor faults, such as loose wires or damaged components. As a result, large quantities of useful material enter landfills, while additional natural resources are consumed to manufacture replacements. Another problem is financial dependence. A person who cannot perform simple maintenance must repeatedly pay technicians or purchase new products. Although each individual expense may appear small, the total cost can become significant over time.</p>
+      <p>One solution is to introduce practical repair lessons in secondary schools. Students could learn how to use basic tools, diagnose simple faults and decide whether an item is safe to repair. Such classes would not need to replace academic subjects; short workshops could be included in technology or science courses. This approach would give students useful abilities while also building patience and confidence.</p>
+      <p>Manufacturers should also make products easier to maintain. They could provide clear repair manuals, sell affordable replacement parts and avoid designs that cannot be opened without specialised equipment. Meanwhile, community repair events could connect inexperienced owners with skilled volunteers. Participants would repair possessions together, allowing knowledge to be shared rather than lost.</p>
+      <p>In conclusion, the decline of basic repair skills contributes to waste and avoidable financial pressure. Practical education, repair-friendly product design and community workshops would enable young adults to keep possessions in use for longer and make more responsible purchasing decisions.</p>
+    </article>
+
+    <h2 class="section-heading">Next 10 Minutes — Structural Analysis</h2>
+
+    <article class="card analysis" id="analysis-one">
+      <span class="pill">Essay 1 Analysis</span>
+      <h3>Why the Structure Works</h3>
+      <h4>Introduction</h4>
+      <ul>
+        <li>Sentence 1 introduces the general context: artificial lighting has practical value.</li>
+        <li>Sentence 2 begins with <strong>“However”</strong>, moving from the background to the controversy.</li>
+        <li>Sentence 3 gives a balanced thesis: safety matters, <strong>although</strong> unnecessary lighting should be reduced.</li>
+        <li>The thesis predicts the order: benefits → disadvantages → writer’s solution.</li>
+      </ul>
+      <h4>Body Paragraph 1</h4>
+      <ul>
+        <li><strong>“Those who support…”</strong> clearly introduces the first viewpoint.</li>
+        <li>The paragraph moves from a general claim to specific locations and then to economic effects.</li>
+        <li><strong>“Furthermore”</strong> adds a second benefit instead of changing the topic.</li>
+        <li><strong>“If… became…, fewer people might…”</strong> presents a possible consequence without claiming certainty.</li>
+      </ul>
+      <h4>Body Paragraph 2</h4>
+      <ul>
+        <li><strong>“Nevertheless”</strong> signals a contrast with the previous paragraph.</li>
+        <li>The first sentence states the opposing claim.</li>
+        <li>The paragraph develops a clear cause-and-effect chain.</li>
+      </ul>
+      <p class="chain">unnecessary lights → wasted electricity → higher emissions</p>
+      <ul>
+        <li><strong>“In addition”</strong> adds environmental effects on wildlife and residents.</li>
+        <li><strong>“Especially when…”</strong> narrows the idea with a precise situation.</li>
+      </ul>
+      <h4>Opinion Paragraph</h4>
+      <ul>
+        <li><strong>“In my view”</strong> makes the writer’s position unmistakable.</li>
+        <li>The <strong>“not X but Y”</strong> pattern rejects an extreme solution and replaces it with a balanced one.</li>
+        <li><strong>“Whereas”</strong> contrasts essential areas with unnecessary lighting.</li>
+      </ul>
+      <h4>Conclusion</h4>
+      <ul>
+        <li>The first sentence summarises both sides.</li>
+        <li><strong>“Therefore”</strong> introduces the final recommendation.</li>
+        <li>No new argument appears in the conclusion.</li>
+      </ul>
+      <h4>Useful Grammar</h4>
+      <ul>
+        <li><strong>Although + clause:</strong> “Although adequate lighting is essential…”</li>
+        <li><strong>Where + clause:</strong> “…where poor visibility may increase risk.”</li>
+        <li><strong>If + past, might + verb:</strong> “If districts became darker, fewer people might visit.”</li>
+        <li><strong>Not… but…:</strong> “Not to make cities dark but to use lighting intelligently.”</li>
+        <li><strong>Whereas:</strong> “Essential locations would remain visible, whereas unnecessary lighting would be limited.”</li>
+      </ul>
+    </article>
+
+    <article class="card analysis" id="analysis-two">
+      <span class="pill">Essay 2 Analysis</span>
+      <h3>Why the Structure Works</h3>
+      <h4>Introduction</h4>
+      <ul>
+        <li>Sentence 1 identifies the trend.</li>
+        <li>Sentence 2 explains two causes.</li>
+        <li>Sentence 3 gives the two main problems.</li>
+        <li>Sentence 4 previews three solution providers: schools, manufacturers and communities.</li>
+      </ul>
+      <h4>Problems Paragraph</h4>
+      <ul>
+        <li><strong>“The first major problem…”</strong> gives the reader an explicit signpost.</li>
+        <li>The example of minor faults makes the problem concrete.</li>
+        <li><strong>“As a result”</strong> connects disposal to environmental consequences.</li>
+        <li><strong>“Another problem”</strong> moves from environmental cost to personal financial cost.</li>
+        <li><strong>“Although…”</strong> acknowledges that single expenses seem harmless before explaining their cumulative effect.</li>
+      </ul>
+      <h4>School Solution Paragraph</h4>
+      <ul>
+        <li><strong>“One solution…”</strong> directly responds to the previous problems.</li>
+        <li>Sentence 2 provides practical lesson content.</li>
+        <li>The semicolon in <strong>“subjects; short workshops…”</strong> joins two closely connected independent ideas.</li>
+        <li><strong>“While also…”</strong> shows that one action creates two benefits.</li>
+      </ul>
+      <h4>Manufacturer and Community Solutions</h4>
+      <ul>
+        <li><strong>“Also”</strong> adds responsibility beyond schools.</li>
+        <li>The list of manuals, parts and repairable designs supplies specific supporting details.</li>
+        <li><strong>“Meanwhile”</strong> introduces an action happening at the community level.</li>
+        <li>The final sentence explains the mechanism.</li>
+      </ul>
+      <p class="chain">people work together → knowledge is transferred → skills survive</p>
+      <h4>Conclusion</h4>
+      <ul>
+        <li>Sentence 1 restates the two problems using different vocabulary.</li>
+        <li>Sentence 2 combines all three solutions and explains their long-term result.</li>
+        <li><strong>“Would enable”</strong> is appropriately cautious and predicts a likely outcome rather than promising certainty.</li>
+      </ul>
+      <h4>Useful Grammar</h4>
+      <ul>
+        <li><strong>Present perfect:</strong> “Replacing… has become more common.”</li>
+        <li><strong>Passive voice:</strong> “Resources are consumed to manufacture replacements.”</li>
+        <li><strong>Relative clause:</strong> “A person who cannot perform simple maintenance…”</li>
+        <li><strong>Although + contrast:</strong> “Although each expense may appear small…”</li>
+        <li><strong>Could + verb:</strong> “Students could learn…”</li>
+        <li><strong>Would enable + object + to-infinitive:</strong> “Workshops would enable adults to keep possessions longer.”</li>
+      </ul>
+    </article>
+
+    <section class="card technique" id="technique">
+      <h2>Today’s Key Technique</h2>
+      <p>Make every paragraph answer four clear questions:</p>
+      <ol>
+        <li>What is this paragraph’s main claim?</li>
+        <li>What example or explanation supports it?</li>
+        <li>What consequence follows?</li>
+        <li>Which linking expression shows its relationship to the previous idea?</li>
+      </ol>
+    </section>
+
+    <footer>Prepared for Sir Atee · Academic Writing Practice</footer>
+  </main>
+
+  <script>
+    addEventListener('scroll', () => {
+      const maximum = document.documentElement.scrollHeight - innerHeight;
+      document.getElementById('progress').style.width = `${maximum ? scrollY / maximum * 100 : 0}%`;
+    }, { passive:true });
+  </script>
+</body>
+</html>
