@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A guided B2 listening and academic writing lesson about Amazon's AI chip lab.">
+  <title>Listening Practice — Inside an AI Chip Lab</title>
+  <style>
+    :root { --bg:#edf2f6; --paper:#fff; --ink:#17202b; --muted:#66717f; --blue:#155b8f; --soft:#e4f2fb; --gold:#f5b942; --line:#d6e0e8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:18px/1.7 Georgia,"Times New Roman",serif; }
+    .progress { position:fixed; inset:0 auto auto 0; height:4px; width:0; background:var(--gold); z-index:10; }
+    .top { position:sticky; top:0; z-index:5; padding:12px max(4vw,18px); border-bottom:1px solid var(--line); background:rgba(255,255,255,.94); backdrop-filter:blur(10px); display:flex; justify-content:space-between; gap:20px; font:700 .78rem/1.2 system-ui,sans-serif; letter-spacing:.06em; text-transform:uppercase; }
+    .top a { color:var(--blue); text-decoration:none; }
+    .top span { color:var(--muted); }
+    main { width:min(850px,92vw); margin:30px auto 70px; }
+    .hero,.card { background:var(--paper); border:1px solid var(--line); border-radius:22px; box-shadow:0 16px 40px rgba(32,58,76,.09); }
+    .hero { padding:clamp(26px,6vw,56px); background:linear-gradient(135deg,#fff 0 66%,var(--soft)); }
+    .tag { display:inline-block; padding:7px 11px; border-radius:999px; background:var(--soft); color:var(--blue); font:800 .74rem/1 system-ui,sans-serif; letter-spacing:.06em; text-transform:uppercase; }
+    h1,h2,h3 { font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.18; letter-spacing:-.025em; }
+    h1 { margin:17px 0 12px; font-size:clamp(2.25rem,7vw,4.6rem); }
+    h2 { margin:0 0 17px; color:var(--blue); font-size:clamp(1.5rem,5vw,2.1rem); }
+    h3 { margin:27px 0 9px; font-size:1.12rem; }
+    .lead { max-width:670px; margin:0; color:var(--muted); font:1.05rem/1.6 system-ui,sans-serif; }
+    .meta { margin-top:25px; display:flex; flex-wrap:wrap; gap:9px; }
+    .meta span { padding:8px 11px; border-radius:9px; background:#f4f7f9; color:var(--muted); font:700 .82rem/1 system-ui,sans-serif; }
+    .watch { display:inline-block; margin-top:25px; padding:14px 19px; border-radius:12px; background:var(--blue); color:white; font:800 .95rem/1 system-ui,sans-serif; text-decoration:none; }
+    .watch:hover { filter:brightness(1.08); }
+    .card { margin-top:20px; padding:clamp(22px,5vw,42px); }
+    .step { border-left:6px solid var(--gold); }
+    .rule { padding:14px 17px; border-radius:12px; background:#fff8e7; font-family:system-ui,sans-serif; }
+    ol,ul { padding-left:1.4em; }
+    li { margin:.55em 0; }
+    .vocab { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; padding:0; list-style:none; }
+    .vocab li { margin:0; padding:13px 15px; border:1px solid var(--line); border-radius:12px; background:#f8fafb; }
+    .vocab strong { display:block; color:var(--blue); font-family:system-ui,sans-serif; }
+    details { border-top:1px solid var(--line); margin-top:24px; padding-top:18px; }
+    summary { cursor:pointer; color:var(--blue); font:800 .95rem/1.4 system-ui,sans-serif; }
+    footer { padding:28px 0 0; text-align:center; color:var(--muted); font:.84rem/1.4 system-ui,sans-serif; }
+    @media (max-width:620px) { body{font-size:17px}.vocab{grid-template-columns:1fr}.hero,.card{border-radius:17px}.top span{text-align:right} }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+  <div class="top"><a href="index.html">← English Collection</a><span>23 October 2026</span></div>
+  <main>
+    <header class="hero">
+      <span class="tag">B2 Listening + Writing</span>
+      <h1>Inside an AI Chip Lab</h1>
+      <p class="lead">Visit Amazon’s Annapurna Labs with BBC News and learn how custom processors are designed, tested, and used to power modern AI systems.</p>
+      <div class="meta"><span>BBC News</span><span>5 minutes 34 seconds</span><span>Two listens · about 15 minutes</span></div>
+      <a class="watch" href="https://www.yahoo.com/news/videos/inside-ai-chip-lab-092526319.html" target="_blank" rel="noopener">▶ Play the BBC video</a>
+    </header>
+
+    <section class="card step">
+      <h2>First Listen — Gist</h2>
+      <p class="rule"><strong>Time:</strong> 6 minutes. Do not pause, use subtitles, or write full sentences. Listen for the overall message.</p>
+      <ol>
+        <li>What is the main purpose of the video?</li>
+        <li>Why is Amazon designing its own chips?</li>
+        <li>Is the report mainly optimistic, critical, or neutral about custom AI chips?</li>
+      </ol>
+    </section>
+
+    <section class="card step">
+      <h2>Second Listen — Details</h2>
+      <p class="rule"><strong>Time:</strong> 8 minutes. Replay the video. You may pause briefly, but keep subtitles off until you finish the questions.</p>
+      <ol>
+        <li>Where is Annapurna Labs located?</li>
+        <li>What tests must a new chip pass before it enters production?</li>
+        <li>What does the phrase <em>silicon bring-up</em> describe?</li>
+        <li>What price-performance improvement does Amazon claim for Trainium3?</li>
+        <li>Name two of Amazon’s four chip families.</li>
+        <li>How are Claude and ChatGPT used during chip development?</li>
+        <li>What comparison explains the chip’s computing power?</li>
+        <li>Which company still dominates global AI training chips?</li>
+        <li>What major industry shift does the reporter identify at the end?</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Vocabulary to Catch</h2>
+      <ul class="vocab">
+        <li><strong>workload</strong>a computing task processed by a system</li>
+        <li><strong>validation</strong>testing that confirms something works correctly</li>
+        <li><strong>custom silicon</strong>a processor designed for a specific organisation or purpose</li>
+        <li><strong>vertical integration</strong>controlling several connected stages of production</li>
+        <li><strong>bottleneck</strong>a point that limits overall performance</li>
+        <li><strong>data centre</strong>a facility containing servers and computing infrastructure</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Writing Follow-Up — Priority Task</h2>
+      <p><strong>Time:</strong> 18 minutes · <strong>Target:</strong> 170–200 words</p>
+      <p><strong>Question:</strong> Large technology companies increasingly design their own AI chips instead of relying entirely on external suppliers. Do the advantages of this development outweigh the disadvantages?</p>
+      <h3>Required Structure</h3>
+      <ol>
+        <li><strong>Introduction:</strong> paraphrase the trend and give your position.</li>
+        <li><strong>Body 1:</strong> explain one major advantage with a concrete example.</li>
+        <li><strong>Body 2:</strong> explain one disadvantage, then evaluate whether it is stronger or weaker.</li>
+        <li><strong>Conclusion:</strong> restate your judgement without adding a new idea.</li>
+      </ol>
+      <p class="rule">Send back your nine listening answers and the 170–200 word response for correction.</p>
+
+      <details>
+        <summary>Check the main ideas only after completing both listens</summary>
+        <p>The report shows Amazon’s Austin chip-design laboratory and explains how custom chips move from manufacturing through functional and performance testing into data centres. Amazon argues that controlling the chip, server, rack, and software layers improves cost and efficiency. The report also places this strategy in a wider competition involving Google, Microsoft, and the market leader Nvidia.</p>
+      </details>
+    </section>
+
+    <footer>Source video: BBC News, presented via Yahoo News · Prepared for Sir Atee</footer>
+  </main>
+  <script>
+    addEventListener('scroll', () => {
+      const maximum = document.documentElement.scrollHeight - innerHeight;
+      document.getElementById('progress').style.width = `${maximum ? scrollY / maximum * 100 : 0}%`;
+    }, { passive:true });
+  </script>
+</body>
+</html>
